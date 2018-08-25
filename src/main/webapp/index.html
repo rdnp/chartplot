@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/C9590015-5200-1047-B818-F2260BCA4495/main.js" charset="UTF-8"></script><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/C9590015-5200-1047-B818-F2260BCA4495/main.js" charset="UTF-8"></script><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/C9590015-5200-1047-B818-F2260BCA4495/main.js" charset="UTF-8"></script><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/C9590015-5200-1047-B818-F2260BCA4495/main.js" charset="UTF-8"></script><script type="text/javascript" src="/C9590015-5200-1047-B818-F2260BCA4495/main.js" charset="UTF-8"></script><script type="text/javascript" src="/C9590015-5200-1047-B818-F2260BCA4495/main.js" charset="UTF-8"></script><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/C9590015-5200-1047-B818-F2260BCA4495/main.js" charset="UTF-8"></script>
+<script type="text/javascript">
+  function dateiupload() {
+    var uploadDatei = document.getElementById("background_file").files[0];
+
+    // Ein Objekt um Dateien einzulesen
+    var reader = new FileReader();
+    var senddata = new Object();
+    // Auslesen der Datei-Metadaten
+    senddata.name = uploadDatei.name;
+    senddata.date = uploadDatei.lastModified;
+    senddata.size = uploadDatei.size;
+    senddata.type = uploadDatei.type;
+
+    // Wenn der Dateiinhalt ausgelesen wurde...
+    reader.onload = function(theFileData) {
+      senddata.fileData = theFileData.target.result;
+      
+      var chartForm = document.getElementById("chartform");
+      var input = document.createElement("input");
+      input.type = "hidden";
+      input.name = "background";
+      input.value = senddata.fileData;
+      
+      chartForm.appendChild(input);
+    }
+
+    // Die Datei einlesen und in eine Data-URL konvertieren
+    
+    reader.readAsDataURL(uploadDatei);
+  }
+</script>
+</head>
+<body>
+    <form id="chartform" name="chartform" action="chartplot" method="post" >
+        Minimum Latitude:<input type="text" name="minLat" value="48"/>
+        Maximum Latitude:<input type="text" name="maxLat" value="50"/>
+        Minimum Longitude:<input type="text" name="minLon" value="8"/>
+        Maximum Longitude:<input type="text" name="maxLon" value="11"/><br/>
+        Chart Height (pix):<input type="text" name="height" value="500"/>
+        Chart Width (pix):<input type="text" name="width" value="500"/>
+        File (Optional):<input type="file" id="background_file" value="" onchange="dateiupload()"/>
+        <br/>
+        <textarea cols="180" rows="35" name="content"></textarea><br/>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
