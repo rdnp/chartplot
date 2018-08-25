@@ -29,7 +29,7 @@ A few hints:
   path into the web UI and generate the chart not caring about filtering out points that are outside the area.
 + the points must be in the form "latitude;longitude;description" where description is an optional label printed next to the point.
   Each point must come in a new line. This is similar to a three-column CSV format, only that the separator is ";" instead of "," and no
-  escape characters are supported. The latitude and longitude must be in decimal degree format.
+  escape characters are supported. The latitude and longitude must be in decimal degree format (positive values are north and east, negative values are south and west).
   
 Point input example:
 > 49.4115;9.8133;Start Point
