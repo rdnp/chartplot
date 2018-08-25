@@ -32,9 +32,9 @@ A few hints:
   escape characters are supported. The latitude and longitude must be in decimal degree format.
   
 Point input example:
-> "49.4115;9.8133;"Start Point"
+> 49.4115;9.8133;Start Point
 >
-> "49.4118;9.8130
+> 49.4118;9.8130
   
 Project and Author
 ------------------
