@@ -1,4 +1,6 @@
-package de.rdnp.chartplot;
+package de.rdnp.chartplot.plotting;
+
+import de.rdnp.chartplot.model.GeoPoint;
 
 /**
  * Projects the part of the earth that is between a particular latitude and longitude linearly onto a plane.

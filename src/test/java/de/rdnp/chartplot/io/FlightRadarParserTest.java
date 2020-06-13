@@ -1,8 +1,11 @@
-package de.rdnp.chartplot;
+package de.rdnp.chartplot.io;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import de.rdnp.chartplot.io.FlightRadarParser;
+import de.rdnp.chartplot.model.GeoContent;
 
 public class FlightRadarParserTest {
 

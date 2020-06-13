@@ -1,4 +1,4 @@
-package de.rdnp.chartplot;
+package de.rdnp.chartplot.plotting;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -16,13 +16,13 @@ import javax.imageio.ImageIO;
  */
 public class ChartPlotter {
 
-	private int width;
+	protected int width;
 
-	private int height;
+	protected int height;
 
 	private BufferedImage background;
 
-	private Color plotColor = Color.RED;
+	protected Color plotColor = Color.RED;
 
 	/**
 	 * Creates the ChartPlotter

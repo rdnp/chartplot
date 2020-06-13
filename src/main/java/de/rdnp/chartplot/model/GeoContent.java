@@ -1,4 +1,4 @@
-package de.rdnp.chartplot;
+package de.rdnp.chartplot.model;
 
 import java.util.List;
 

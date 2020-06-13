@@ -1,4 +1,6 @@
-package de.rdnp.chartplot;
+package de.rdnp.chartplot.plotting;
+
+import de.rdnp.chartplot.model.GeoPoint;
 
 /**
  * A projection projects GeoContent (locations on the earth) onto a chart (two-dimensional rectangle).

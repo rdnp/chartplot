@@ -1,10 +1,14 @@
-package de.rdnp.chartplot;
+package de.rdnp.chartplot.io;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 import org.junit.Test;
+
+import de.rdnp.chartplot.io.GeoContentParser;
+import de.rdnp.chartplot.model.GeoContent;
+import de.rdnp.chartplot.model.GeoPoint;
 
 import static org.junit.Assert.*;
 

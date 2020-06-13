@@ -1,8 +1,13 @@
-package de.rdnp.chartplot;
+package de.rdnp.chartplot.plotting;
 
 import java.util.Collections;
 
 import org.junit.Test;
+
+import de.rdnp.chartplot.model.GeoContent;
+import de.rdnp.chartplot.model.GeoPoint;
+import de.rdnp.chartplot.plotting.Chart;
+import de.rdnp.chartplot.plotting.LinearProjection;
 
 import static org.junit.Assert.*;
 

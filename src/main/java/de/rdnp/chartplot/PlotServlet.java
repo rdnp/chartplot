@@ -9,6 +9,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import de.rdnp.chartplot.io.GeoContentParser;
+import de.rdnp.chartplot.model.GeoContent;
+import de.rdnp.chartplot.plotting.Chart;
+import de.rdnp.chartplot.plotting.ChartPlotter;
+import de.rdnp.chartplot.plotting.LinearProjection;
+import de.rdnp.chartplot.plotting.Projection;
+
 /**
  * Servlet to plot a chart from various user inputs:
  * <ul>

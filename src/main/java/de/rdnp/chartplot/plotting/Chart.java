@@ -1,7 +1,10 @@
-package de.rdnp.chartplot;
+package de.rdnp.chartplot.plotting;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import de.rdnp.chartplot.model.GeoContent;
+import de.rdnp.chartplot.model.GeoPoint;
 
 /**
  * A chart that accepts GeoPoints to be added to it. Has a projection (e.g. linear, Lambert conical, ...) 

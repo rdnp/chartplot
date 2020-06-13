@@ -1,4 +1,4 @@
-package de.rdnp.chartplot;
+package de.rdnp.chartplot.plotting;
 
 /**
  * A point on a Chart. Has a relative (i.e. a double value within 0..1) horizontal and vertial position on the chart plane.  

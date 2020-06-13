@@ -1,8 +1,11 @@
-package de.rdnp.chartplot;
+package de.rdnp.chartplot.io;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import de.rdnp.chartplot.model.GeoContent;
+import de.rdnp.chartplot.model.GeoPoint;
 
 /**
  * A simple parser to parse a simplified CSV file with ";" separator into GeoContent. 

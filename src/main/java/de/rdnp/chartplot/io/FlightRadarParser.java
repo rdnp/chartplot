@@ -1,4 +1,4 @@
-package de.rdnp.chartplot;
+package de.rdnp.chartplot.io;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -8,6 +8,9 @@ import java.util.List;
 
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
+
+import de.rdnp.chartplot.model.GeoContent;
+import de.rdnp.chartplot.model.GeoPoint;
 
 /**
  * Reads GeoContent from a CSV file downloaded from FlightRadar24
